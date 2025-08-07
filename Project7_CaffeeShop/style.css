@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.part1 {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80');
+
+
+}
+
+.banner {
+
+    text-align: center;
+
+}
+
+.banner h2 {
+    margin-bottom: 23px;
+    color: aliceblue;
+    animation: slideFromRight 4s linear;
+}
+
+.bannerBTN {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: red;
+    padding: 16px 22px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: 1s all;
+    text-transform: uppercase;
+    animation: btnOP 4s linear;
+}
+
+.bannerBTN:hover {
+
+    background-color: red;
+    color: antiquewhite;
+
+}
+
+@keyframes slideFromRight {
+
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+
+
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes btnOP {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+.part2 {
+    width: 100%;
+    height: 25px;
+    background-color: red;
+
+}
+
+.part3 {
+    display: flex;
+}
+
+.feature {
+    text-align: center;
+    padding: 42px 2px;
+    transition: all 0.6s linear;
+}
+
+.icon {
+    font-size: 40px;
+    color: darkred;
+}
+
+.feat_text {
+    padding: 32px;
+    font-size: larger;
+
+}
+
+.feature:hover {
+    background-color: darkred;
+    color: antiquewhite;
+
+    .icon {
+        color: antiquewhite;
+    }
+}
+
+.feat_title {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+
+.part4 {
+    height: 450px;
+    display: flex;
+    margin: 20px 50px;
+    background: burlywood;
+    width: 100%;
+    margin: 0px;
+}
+
+.about {
+
+    padding: 10px 50px;
+    font-size: 22px;
+    position: relative;
+}
+
+.img img {
+    transition: all 0.6s linear;
+    border-radius: 25px;
+
+}
+
+.part4 .img {
+    padding: 15px;
+}
+
+.about h1 {
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-style: italic;
+}
+
+.about a {
+    position: absolute;
+    top: 210px;
+    text-decoration: none;
+    font-size: 28px;
+    color: aliceblue;
+    border: 2px solid darkred;
+    background-color: darkred;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: all 1s linear;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.about a:hover {
+    transform: scale(1.06);
+    opacity: 0.6;
+    background-color: white;
+    color: darkred;
+}
+
+.part5 {
+
+    display: flex;
+    margin: 0;
+    background-color: antiquewhite;
+    padding: 50px 30px;
+
+}
+
+.d img {
+    width: 350px;
+    height: 350px;
+}
+
+.products {
+    margin-right: 100px;
+    font-size: 19px;
+    position: relative;
+
+}
+
+.products a {
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 27px;
+    border: 2px solid;
+    position: absolute;
+    top: 170px;
+    padding: 7px;
+    border-radius: 25px;
+    transition: all 1s linear;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+.d {
+    text-align: center;
+    font-size: x-large;
+    margin-right: 30px;
+}
+
+.products a:hover {
+
+    background-color: darkgreen;
+    color: antiquewhite;
+    opacity: 0.5;
+}
+
+.part6 {
+    padding: 10px;
+    background-color: burlywood;
+    /* margin: 0px; */
+    /* margin-top: -44px; */
+    height: 888px;
+    margin: 0;
+}
+
+.p6a {
+    text-align: center;
+    margin-top: 47px;
+}
+
+
+.p6b {
+    display: flex;
+    margin: 20px 30px;
+    flex-wrap: nowrap;
+}
+
+.p6img {
+    width: 30%;
+
+    padding: 20px 30px;
+    font-size: x-large;
+    text-align: center;
+    border: 2px solid;
+    margin: 0px 20px;
+    border-radius: 100px;
+    transition: all 0.5s linear;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.p6img img {
+    border-radius: 100px;
+    width: 385px;
+    height: 366px;
+    margin-bottom: 40px;
+}
+
+.p6img a {
+    text-decoration: none;
+    border: 2px solid darkred;
+    background: darkred;
+    color: white;
+    font-size: 30px;
+    border-radius: 14px;
+    letter-spacing: 2px;
+}
+
+.p6img:hover {
+    transform: scale(1.09);
+    opacity: 0.8;
+}
+
+.p6img a:hover {
+    background-color: darkgreen;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.part7{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 25px;
+    background-color:ghostwhite ;
+}
+
+
+.contact_form{
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+text-align: center;
+padding:32px ;
+border-radius:23px ;
+min-width: 45%;
+
+}
+.formGroup input,textarea{
+    width: 100%;
+}
+.formGroup{
+padding: 18px 24px;
+
+
+}
+.form_inp{
+margin-top: 15px;
+padding: 13px 16px;
+border: none;
+border-radius: 20px;
+text-transform:uppercase ;
+
+}
+
+.form_inp::placeholder{
+    letter-spacing: 2px;
+}
+
+
+.contact_form button{
+
+        font-size: 25px;
+    padding: 16px;
+    border-radius: 27px;
+    background-color: goldenrod;
+    color: cornsilk;
+    width: 100%;
+    border: none;
+    transition: all 0.5s linear;
+}
+
+.contact_form button:hover{
+opacity: 0.6;
+
+}
+
+.contact_title{
+    color: green;
+    font-weight: 400;
+}
+.contact_info{
+    text-transform: uppercase;
+}
+
+.contact_item{
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+.contact_form h3{
+    font-size: 25px;
+}
+.contact_form{
+    background-color: seashell;
+}
+
+.part8{
+
+    padding: 60px 30px;
+    background-color: black;
+    text-align: center;
+
+}
+.social_icon{
+color: white;
+font-size: 35px;
+transition: all 0.4s linear;
+text-decoration: none;
+transition: color 0.3s;
+display: inline-block;
+margin-right: 10px;
+margin-bottom: 15px;
+
+}
+.part8 h4{
+    color: white;
+    font-size: 28px;
+}
+
+.social_icon:hover{
+    color: red;
+animation: up 1s ease-out;
+
+}
+
+@keyframes up{
+
+0%{
+transform: translateY(0);
+}
+
+
+50%{
+transform: translateY(-15px);
+    
+}
+
+
+100%{
+transform: translateY(0);
+    
+}
+
+
+
+
+
+}
+
+
+
+
+
+.navBTN{
+
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+    color: blue;
+    font-size: 45px;
+    cursor: pointer;
+    animation: hamburger 2s ease infinite;
+}
+
+
+
+@keyframes hamburger{
+
+
+0%{
+transform: scale(1);
+
+}
+
+
+50%{
+    transform: scale(2);
+
+}
+
+
+100%{
+transform: scale(1);
+
+    
+}
+
+
+
+
+
+
+}
+
+
+
+
+.navbar{
+    position: fixed;
+    z-index: 2;
+    width: 25vw;
+    background-color: white;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+transform: translateX(-100%);
+transition: all 0.4s linear;
+}
+
+.showNavbar{
+    transform: translate(0);
+}
+
+
+
+
+.navbarHeader{
+
+
+    text-align: right;
+}
+.navClose{
+
+    font-size: 50px;
+    color: brown;
+    padding-right: 16px;
+cursor: pointer;
+
+
+
+
+}
+.navLink{
+
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: brown;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+
+}
+.navLink:hover{
+background-color: darkkhaki;
+opacity: 0.8;
+
+    border-left:5px solid brown ;
+    color: black;
+padding-left: 30px;
+}
+
+
+@media screen and (max-width:480px){
+ .part1 {
+    height: 60vh;
+    background-position: 70% center;
+  }
+  
+  .banner h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    padding: 0 15px;
+  }
+  
+  .bannerBTN {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    
+  }
+  
+  /* Part3 - Özellikler Alanı */
+  .part3 {
+    flex-direction: column;
+  }
+  
+  .feature {
+    padding: 20px 5px;
+  }
+  
+  .icon {
+    font-size: 30px;
+  }
+  
+  .feat_text {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .feat_title {
+    font-size: 1.2rem;
+  }
+  
+  /* Part4 - Hakkımızda Alanı */
+  .part4 {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .about {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .about h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .about h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about a {
+    position: relative;
+    top: auto;
+    margin: 15px 0;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Part5 - Ürünler Alanı */
+  .part5 {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  
+  .products {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .products a {
+    position: relative;
+    top: auto;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  
+  .d {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .d img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Part6 - Galeri Alanı */
+  .part6 {
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .p6a h1 {
+    font-size: 1.5rem;
+  }
+  
+  .p6b {
+    flex-direction: column;
+    margin: 10px 5px;
+  }
+  
+  .p6img {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  
+  .p6img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+  
+  .p6img a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  /* Part7 - İletişim Alanı */
+  .part7 {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  
+  .contact_form {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+  }
+  
+  .formGroup {
+    padding: 10px 12px;
+  }
+  
+  .form_inp {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .contact_form button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
+  .contact_item {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Part8 - Footer Alanı */
+  .part8 {
+    padding: 30px 15px;
+  }
+  
+  .social_icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  .part8 h4 {
+    font-size: 1.2rem;
+  }
+  
+  /* Navbar */
+  .navBTN {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    top: 3%;
+    left: 3%;
+  }
+  
+  .navbar {
+    width: 85%;
+  }
+  
+  .navLink {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+
+
+}
+
+

@@ -1,0 +1,299 @@
+/* Genel sıfırlama ve ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+/* ========== NAVBAR ========== */
+.part1 {
+  width: 100%;
+  height: auto;
+  background-color: red;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+}
+
+.navbar img {
+  width: 200px;
+  height: 100px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 30px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+/* ========== HERO BANNER ========== */
+.part2 {
+  background-image: url('https://plus.unsplash.com/premium_photo-1695758787890-a9b5f7f85a4c?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0');
+  width: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ========== BURGER KARTLARI ========== */
+.part3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.images {
+  background-color: sandybrown;
+  border: 2px solid red;
+  border-radius: 30px;
+  padding: 20px;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.images:hover {
+  transform: scale(1.03);
+}
+
+.images img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.images h2 {
+  font-size: 26px;
+  color: darkred;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.images h3 {
+  font-size: 18px;
+  color: navy;
+  margin: 10px 0;
+}
+
+.images h1 {
+  font-size: 22px;
+  color: black;
+  margin: 10px 0;
+}
+
+.images a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: blanchedalmond;
+  color: red;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.images a:hover {
+  background-color: tomato;
+  color: white;
+  border-color: darkred;
+}
+
+/* ========== FORM BÖLÜMÜ ========== */
+.part4 {
+  width: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.part4all {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sip p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.a form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.a input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.a input[type="submit"]:hover {
+  background-color: #e84c3d;
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+
+  .images {
+    max-width: 90%;
+  }
+
+  .part4all {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .navbar img {
+    width: 150px;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 8px 0;
+    font-size: 20px;
+  }
+
+  .part2 {
+    height: 280px;
+    background-position: center;
+  }
+
+  .part3 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .images {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .images img {
+    height: 180px;
+  }
+
+  .images h2 {
+    font-size: 22px;
+  }
+
+  .images h3,
+  .images h1 {
+    font-size: 16px;
+  }
+
+  .images a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .part4 {
+    padding: 40px 10px;
+  }
+
+  .part4all {
+    padding: 20px;
+  }
+
+  .sip p {
+    font-size: 20px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input[type="text"],
+  form input[type="number"] {
+    font-size: 14px;
+  }
+
+  .a input[type="submit"] {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}

@@ -1,0 +1,563 @@
+.header
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+    background-color: aliceblue;
+    font-size: 30px;
+padding: 0px 25px;
+
+}
+
+.bar a{
+
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+}
+
+.part2{
+
+height: 650px;
+position: relative;
+
+}
+
+.text{
+    text-align: center;
+position: absolute;
+top: 40px;
+font-weight: 800;
+font-size: x-large;
+}
+
+
+.part3{
+
+    display: flex;
+        justify-content: center;
+
+}
+
+.img{
+    margin-top: 50px;
+border:2px solid black ;
+width: 300px;
+
+border-radius: 30px;
+margin-right: 35px;
+
+
+}
+
+.img img{
+
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.img h1{
+
+text-align: center;
+font-size: x-large;
+font-weight: 600;
+
+
+}
+
+.img p{
+padding: 0px 20px;
+font-size: 18px;
+
+}
+
+form{
+ text-align: center;
+ margin-top: 50px
+
+
+}
+
+input[type=text] ,select {
+width: 20%;
+padding: 10px 10px;
+border: 2px solid black;
+margin: 8px 5px;
+
+
+
+}
+label{
+font-size: 20px;
+color: red;
+font-weight: 600;
+
+}
+
+input[type=submit]{
+
+margin-left: 30px;
+padding:20px 50px ;
+border-radius: 30px;
+color: white;
+background-color: red;
+margin-bottom: 10px;
+
+
+}
+
+
+input[type=submit]:hover
+{
+background-color: white;
+cursor: pointer;
+color: red;
+
+
+
+}
+
+select:hover,input[type=text]:hover
+{
+background-color: red;
+color: white;
+
+
+}
+.a{
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+
+
+
+
+.b{
+    background-color: black;
+    color: white;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width : 468px) {
+    /* .web{
+    display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .header{
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bar{
+        display: flex;
+        flex-direction: column;
+    }
+    */
+    /* @media screen and (max-width: 480px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .bar.show {
+    display: flex;
+  }
+
+  .bar a {
+    margin: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .part2 .text h1 {
+    font-size: 24px;
+  }
+
+  .part2 .text p {
+    font-size: 14px;
+  }
+
+  .part3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .part4 {
+    padding: 10px;
+  }
+
+  .part4 form, .part4 .a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .b h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+}
+
+
+ */
+
+@media screen and (max-width: 480px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    animation: slideDown 0.3s ease-in-out;
+    position: absolute;
+    top: 60px; /* veya .mobile boyutuna göre */
+    left: 0;
+    z-index: 999;
+  }
+
+  .bar.show {
+    display: flex;
+  }
+
+  .bar a {
+    margin: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .part2 .text h1 {
+    font-size: 24px;
+  }
+
+  .part2 .text p {
+    font-size: 14px;
+  }
+
+  .part3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .part4 {
+    padding: 10px;
+  }
+
+  .part4 form, .part4 .a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .b h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  input[type="text"],
+  select {
+    width: 90%;
+    padding: 8px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+}
+/* 480px ve altı için */
+@media screen and (max-width: 480px) {
+  /* (Senin verdiğin tüm kodlar burada) */
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    animation: slideDown 0.3s ease-in-out;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .bar.show {
+    display: flex;
+  }
+
+  .bar a {
+    margin: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .part2 .text h1 {
+    font-size: 24px;
+  }
+
+  .part2 .text p {
+    font-size: 14px;
+  }
+
+  .part3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 90%;
+    height: auto;
+  }
+
+  .part4 {
+    padding: 10px;
+  }
+
+  .part4 form,
+  .part4 .a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .b h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  input[type="text"],
+  select {
+    width: 90%;
+    padding: 8px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}
+
+/* 481px ile 768px arası için */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .web {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .bar {
+    display: flex !important; /* Menü hep görünür */
+    flex-direction: row;
+    background-color: transparent;
+    position: static;
+    width: auto;
+    padding: 0;
+    animation: none;
+  }
+
+  .bar a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .part2 .text h1 {
+    font-size: 28px;
+  }
+
+  .part2 .text p {
+    font-size: 16px;
+  }
+
+  .part3 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .img {
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .part4 {
+    padding: 20px 40px;
+  }
+
+  .part4 form,
+  .part4 .a {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  input[type="text"],
+  select {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .b h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+
+}
+
+
+
+
+

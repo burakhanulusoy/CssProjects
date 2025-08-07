@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+}
+.part1 img{
+    padding: 10px 18px;
+}
+.part1{
+    background-color: gray;
+}
+
+.part2{
+        display: flex
+;
+    justify-content: space-around;
+    background-color: ghostwhite;
+    padding: 40px;
+}
+
+.p2_2 img{
+       border: 4px solid darkorchid;
+    width: 404px;
+    height: 500px;
+    margin-left: 68px;
+    border-radius: 22px;
+}
+.p2_title h1{
+    font-size: 55px;
+}
+.p2_1{
+    margin-top: -15px;
+}
+.impo{
+        border-bottom: 4px solid darkmagenta;
+    margin-top: -25px;
+    width: 92px;
+}
+.dark{
+    color: darkorchid;
+    font-size: 36px;
+}
+.p2_infos h2{
+        font-size: 36px;
+        margin-top: -10px;
+}
+
+.c{
+    font-size: 28px;
+}
+
+.p2_infos h3{
+    margin-top: -10px;
+}
+.p2_infos h5{
+    margin-top: -5px;
+    font-size: 27px;
+}
+.p2_btn a{
+     background-color: darkmagenta;
+    color: white;
+    font-size: 20px;
+    border-radius: 124px;
+    padding: 13px 48px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 2px solid;
+text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.p2_btn a:hover{
+color: darkorchid;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+
+
+.p3_img img{
+        width: 400px;
+    height: 500px;
+    border: 4px solid darkgreen;
+    border-radius: 34px;
+}
+
+.part3{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    margin-top: 6px;
+    padding: 39px 2px;
+}
+.p3_title h1{
+        font-size: 43px;
+    margin-top: -3px;
+}
+.p3_text{
+        font-size: 18px;
+    font-style: italic;
+}
+.p3_aboutcan{
+    width: 50%;
+}
+
+.p4_cards{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img2{
+    width: 52px;
+    transform: translateX(-56px);
+}
+.img1{
+    width: 100%;
+        border-radius: 35px 35px 0px 0px;
+height: 200px;
+}
+.img{
+    width: 100%;
+}
+.part4{
+    background-color: mintcream;
+    padding: 5px
+}
+
+.p4_title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+.p4_title p{
+        margin-left: 665px;
+    width: 182px;
+}
+.p4_title span{
+    color: darkorchid;
+}
+
+
+.card{
+
+border: 2px solid black;
+border-radius: 35px;
+    margin: 35px 35px;
+    height: 360px;
+    transition: all 0.3s linear;
+
+
+}
+.card:hover{
+    transform: scale(1.09);
+    background-color: azure;
+    
+}
+
+.card_text{
+        text-align: center;
+    margin-bottom: 5px;
+}
+.card_text h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin-bottom: -24px;
+}
+.card_text a{
+        text-decoration: none;
+    font-size: 27px;
+    border: 2px solid;
+    background-color: darkorchid;
+    color: white;
+    padding: 5px 37px;
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+transition: all 0.2s linear;
+}
+.card_text h5{
+font-size: 18px;
+    margin-bottom: 10px;
+}
+.card_text a:hover{
+    color: blueviolet;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.part5{
+        background-color: black;
+    color: white;
+    padding: 5px;
+}
+.p5_icons{
+        text-align: center;
+    margin-top: 50px;
+    font-size: 23px;
+
+}
+.p5_icons i{
+    padding: 3px;
+    transition: all 0.3s linear;
+}
+.part5 h2{
+        text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.p5_icons i:hover{
+    color: darkred;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:768px) {
+
+
+    
+.part1 img{
+        width: 65px;
+    padding: 10px 31px;
+}
+.part2{
+    display: inline;
+    padding: 0px;
+}
+.impo{
+
+    margin-left: 165px;
+}
+.p2_title,.p2_infos,.p2_btn{
+    text-align: center;
+}
+.p2_title h1{
+    text-align: center;
+}
+.p2_title .impo{
+    margin-left: 169px;
+}
+.p2_btn{
+    margin-bottom: 37px;
+}
+.p2_2 img{
+    width: 69%;
+    height: 380px;
+}
+.part3{
+    display: inline;
+}
+.p3_img img{
+    display: contents;
+}
+.p3_text{
+        font-size: 16px;
+    padding: 10px 20px;
+}
+.p3_title .impo{
+        font-size: 16px;
+    padding: 2px 20px;
+    margin-left: 35px;
+}
+.p3_title{
+    margin-top: 20px;
+margin-bottom: 20px;}
+
+.p3_aboutcan{
+    margin-left: 107px;
+    text-align: center;
+}
+
+
+
+
+
+}
